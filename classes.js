@@ -29,7 +29,17 @@
   Call your class Employee and receive all the data in the constructor in the order listed above.
 */
 
-//Code Here
+class Employee{
+  constructor (first_name,last_name,email,age){
+    this.first_name = first_name;
+    this.last_name = last_name;
+    this.email = email;
+    this.age = age;
+  }
+  makeWidget(first_name,last_name){
+    return this.first_name + ' ' + this.last_name + ' ' + 'Widget'
+  }
+}
 
 
 
@@ -49,7 +59,19 @@
   Call your new class Manager
 */
 
-//Code Here
+class Manager extends Employee {
+  constructor(first_name,last_name,email,age){
+    super (first_name,last_name,email,age)
+    this.reports = []
+  }
+hire(newEmployee){
+  // this.newEmployee = reports.push(Manager)
+  this.reports.push(newEmployee);
+}
+fire(oldEmployee){
+  this.reports.splice(oldEmployee,1);
+}
+}
 
 
 
@@ -75,7 +97,17 @@
   Call your new class ProgressiveManager
 */
 
-//Code Here
+class ProgressiveManager extends Manager {
+  constructor(first_name,last_name,email,age,reports,manager){
+    super(first_name,last_name,email,age,reports,manager)
+    this.title = 'Not a manager'
+    this.bonus = 0
+  }
+  fire(oldEmployee){
+    this.reports.splice(oldEmployee[i]);
+    this.bonus = 100
+  }
+}
 
 
 
@@ -102,6 +134,12 @@
         - It should set decrease wear_and_tear_count by 10, and set needs_reboot to false
 */
 
-//Code Here
+class Machine{
+  constructor(widgets_made_count, wear_and_tear_count, needs_reboot){
+    this.widget_made_count = 0
+    this.wear
+  }
+}
+
 
 

@@ -50,7 +50,13 @@ var employees = [
     3. Return the updated employee array.
 */
 
-//Code Here
+// function employeeUpdater (){
+//   for(let key in employee){
+//     var myArray = employees.slice(){
+//     delete 
+//     }
+//   }
+// }
 
 
 
@@ -68,7 +74,7 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
     3. Return the updated array.
 */
 
-//Code Here
+
 
 
 
@@ -96,10 +102,12 @@ var cat = {
     2. Assign fluffy2ndFriend the name of Fluffy's 2nd friend.
 */
 
-//Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
 
+
+var grumpyActivity = cat.catFriends[0].activities[1];
+grumpyActivity;
+var fluffy2ndFriend = cat.catFriends[1].name;
+fluffy2ndFriend;
 
 
 ////////// PROBLEM 4 //////////
@@ -157,6 +165,18 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
     4. Return the modified numsArr.
 */
 
-//Code Here
+function looper (){
+  for (var i=0; i<numsArr.length; i++){
+    console.log(i)
+    for (var numsArri = 0; numsArri<numsArr[i].length; numsArri++){
+    if (numsArr[i][numsArri] % 2 === 0){
+        numsArr[i][numsArri] = 'even'
+    }else{
+        numsArr[i][numsArri] = 'odd'
+    }
+  }
+}
+return numsArr;
+}
 
 
