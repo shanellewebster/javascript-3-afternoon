@@ -39,11 +39,11 @@
   Inside the function showValues, write a for in loop that concatenates each of the property values and returns the concatenated string.
 */
 
-function showValues( obj ) {
-  for (var key in values){
-    return 
-  }
-}
+// function showValues( obj ) {
+//   for (var key in values){
+    
+//   }
+// }
 
 
 
@@ -93,12 +93,12 @@ function double (obj){
   By the end of the for in loop, you should have a sentence, return that sentence.
 */
 
-function secrets(obj){
-  var str = ""
-  for(let key in obj){
-    if()
-  }
-}
+// function secrets(obj){
+//   var str = ""
+//   for(let key in obj){
+//     if()
+//   }
+// }
 
 
 
